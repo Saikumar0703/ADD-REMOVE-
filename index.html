@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gadugi';
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: cornflowerblue;
+        }
+
+        .abc {
+            height: 400px;
+            width: 350px;
+            background-color:#fff;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .abc img{
+            height: 50%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            padding: 14px;
+            border-radius: 25px;
+        }
+
+        .abc h1{
+            font-size: 30px;
+            margin: -9px 0px;
+        }
+
+        .abc h3{
+            font-size: 25px;
+            margin: 30px 0px ;
+            color: red;
+        }
+        
+        .abc button{
+            background-color: cadetblue;
+            color: #fff;
+            font-weight: 600;
+            padding: 13px 17px;
+            border-radius: 10px;
+            border: none;
+            margin: 8px;
+            cursor: pointer;
+        }
+        .abc #remove{
+             background-color: #dadada;
+             color: #111;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="abc">
+        <img src="./abcd.avif" alt="./">
+        <h1>Vijay Devarakonda</h1>
+        <h3>Stranger</h3>
+        <button id="Remove">Remove</button>
+        <button id="add">Add Frined</button>
+    </div>
+
+    
+<script>
+
+    var a = document.querySelector("h3")
+    
+    var b = document.querySelector("#add")
+    var c = document.querySelector("#Remove")
+          
+    
+    b.addEventListener("click",function(){
+        a.innerHTML = "Friends"
+        a.style.color = "green"
+    })
+    c.addEventListener("click", function() {
+    location.reload();
+    })
+    
+    
+    
+    </script>
+</body>
+
+</html>
